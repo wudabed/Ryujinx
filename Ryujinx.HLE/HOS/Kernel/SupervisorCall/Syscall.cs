@@ -1415,7 +1415,6 @@ namespace Ryujinx.HLE.HOS.Kernel.SupervisorCall
             // for homebrew because some of them requires this to be patched out to work (for JIT).
             if (codeMemory == null || (!currentProcess.AllowCodeMemoryForJit && codeMemory.Owner == currentProcess))
             {
-                return KernelResult.InvalidHandle;
             }
 
             switch (op)
